@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navbar from './components/Navbar';
 import NewsList from './components/NewsList';
 import Loader from './components/Loader';
+import Login from'./components/login';
 
 const API_KEY = '0ea2bdb2e0714ed0a010339f866ae4b0';
 const API_URL = 'https://newsapi.org/v2/everything';
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <Login/>
       <Navbar
         setCategory={setCategory}
         searchQuery={searchQuery}
